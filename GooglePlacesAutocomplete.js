@@ -288,8 +288,6 @@ export const GooglePlacesAutocomplete = forwardRef((props, ref) => {
             _disableRowLoaders();
             _onBlur();
 
-            setStateText(_renderDescription(rowData));
-
             delete rowData.isLoading;
             props.onPress(rowData, details);
             // }
